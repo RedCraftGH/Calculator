@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+
+    height: 200vh;
+}
+
+.topbar {
+    font-size: 1.75rem;
+    text-align: center;
+    color: white;
+
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    cursor: default;
+    width: 50%;
+}
+
+.topbar h1 {
+    background-color: mediumspringgreen;
+    border-radius: 15px;
+    padding: 1% 0;
+}
+
+.calculator {
+    width: 25%;
+    height: 40%;
+
+    margin-left: 37.5%;
+
+    background-color: gray;
+    box-shadow: 0px 0px 5px black, 2px 2px 5px black;
+
+    border-radius: 10px;
+    border-top: 2px solid darkgray;
+    border-left: 2px solid darkgray;
+    border-bottom: 2px solid #787878;
+    border-right: 2px solid #787878;
+}
+
+.display {
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    width: 90%;
+    height: 25%;
+
+    margin-top: 5%;
+    margin-left: 5%;
+
+    background-color: silver;
+    border-radius: 10px;
+    border: 3px solid #787878;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: end;
+    font-size: 3rem;
+    line-height: 65%;
+    vertical-align: 65%;
+}
+
+.buttons {
+
+    width: 90%;
+    height: 60%;
+
+    margin-top: 10%;
+    margin-left: 5%;
+
+    border: 2px solid #787878;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.button {
+
+    width: 17%;
+    height: 15%;
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 40%;
+
+    box-shadow: 0px 0px 2px black, 2px 2px 2px black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.button:hover {
+
+    box-shadow: 0px 0px 2px black;
+}
+
+@media (orientation: portrait) {
+    
+    .calculator {
+
+        width: 80%;
+    }
+    .display {
+
+        font-size: 8rem;
+    }
+    .button {
+
+        font-size: 2rem;
+    }
+}

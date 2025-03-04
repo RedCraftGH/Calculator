@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./styles/index.css">
+    </head>
+    <body>
+
+        <div class="topbar">
+            <h1>Calculator</h1>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <p>0</p>
+            </div>
+            <div class="buttons">
+                <div class="button" id="clear" onclick="sendInput(-1)">CLEAR</div>
+                <div class="button" id="sqrt" onclick="sendInput(-2)">√</div>
+                <div class="button" id="negpos" onclick="sendInput(-3)">+/-</div>
+                <div class="button" id="del" onclick="sendInput(-4)">DEL</div>
+                <div class="button" id="divide" onclick="sendInput(13)">÷</div>
+                <div class="button" id="square" onclick="sendInput(-5)">x²</div>
+                <div class="button" id="seven" onclick="sendInput(7)">7</div>
+                <div class="button" id="eight" onclick="sendInput(8)">8</div>
+                <div class="button" id="nine" onclick="sendInput(9)">9</div>
+                <div class="button" id="multiply" onclick="sendInput(12)">x</div>
+                <div class="button" id="pi" onclick="sendInput(3.14)">π</div>
+                <div class="button" id="four" onclick="sendInput(4)">4</div>
+                <div class="button" id="five" onclick="sendInput(5)">5</div>
+                <div class="button" id="six" onclick="sendInput(6)">6</div>
+                <div class="button" id="minus" onclick="sendInput(11)">-</div>
+                <div class="button" id="e" onclick="sendInput(2.71828)">e</div>
+                <div class="button" id="one" onclick="sendInput(1)">1</div>
+                <div class="button" id="two" onclick="sendInput(2)">2</div>
+                <div class="button" id="three" onclick="sendInput(3)">3</div>
+                <div class="button" id="plus" onclick="sendInput(10)">+</div>
+                <div class="button" id="off" onclick="sendInput(-6)">off</div>
+                <div class="button" id="zero" onclick="sendInput(0)">0</div>
+                <div class="button" id="decimal" onclick="sendInput(50)">.</div>
+                <div class="button" id="percent" onclick="sendInput(-7)">%</div>
+                <div class="button" id="equals" onclick="sendInput(-8)">=</div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/main.js"></script>
+</html>
